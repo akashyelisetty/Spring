@@ -1,25 +1,17 @@
 /**
- * Core Spring AOP interfaces, built on AOP Alliance AOP interoperability interfaces.
+ * This package contains interfaces and classes for manipulating Java beans.
+ * It is used by most other Spring packages.
  *
- * <p>Any AOP Alliance MethodInterceptor is usable in Spring.
+ * <p>A BeanWrapper object may be used to set and get bean properties,
+ * singly or in bulk.
  *
- * <br>Spring AOP also offers:
- * <ul>
- * <li>Introduction support
- * <li>A Pointcut abstraction, supporting "static" pointcuts
- * (class and method-based) and "dynamic" pointcuts (also considering method arguments).
- * There are currently no AOP Alliance interfaces for pointcuts.
- * <li>A full range of advice types, including around, before, after returning and throws advice.
- * <li>Extensibility allowing arbitrary custom advice types to
- * be plugged in without modifying the core framework.
- * </ul>
- *
- * <p>Spring AOP can be used programmatically or (preferably)
- * integrated with the Spring IoC container.
+ * <p>The classes in this package are discussed in Chapter 11 of
+ * <a href="https://www.amazon.com/exec/obidos/tg/detail/-/0764543857/">Expert One-On-One J2EE Design and Development</a>
+ * by Rod Johnson (Wrox, 2002).
  */
 @NonNullApi
 @NonNullFields
-package org.springframework.aop;
+package org.springframework.beans;
 
 import org.springframework.lang.NonNullApi;
 import org.springframework.lang.NonNullFields;
